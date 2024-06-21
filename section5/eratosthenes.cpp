@@ -49,6 +49,8 @@ int main (int argc, char* argv[]) {
     high_value = 2 + BLOCK_HIGH(id, p, n-1);
     size = BLOCK_SIZE(id, p, n-1);
 
+    cout << "id: " << id << ", low_value: " << low_value << ", high_value: " << high_value << ", size: " << size << endl;
+
     proc0_size = (n-1)/p;
 
     if ((2 + proc0_size) < (int) sqrt((double) n)) {

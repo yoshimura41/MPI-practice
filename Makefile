@@ -7,9 +7,9 @@ OBJS=$(SRCS:.cpp=)
 all: $(OBJS)
 
 %: %.cpp
-	$(MPICC) $(CPPFLAGS) $< -o $@
+	$(MPICC) $(CPPFLAGS) $< -o $@.out
 
 clean:
-	rm -f *.o *~ tmp* a.out
+	rm -f *.o *~ *.out
 
 .PHONY: clean
