@@ -7,7 +7,7 @@ OBJS=$(SRCS:.cpp=)
 all: $(OBJS)
 
 %: %.cpp
-	$(MPICC) $(CPPFLAGS) $< -o a.out
+	$(MPICC) $(CPPFLAGS) $< -o $@.out
 
 clean:
 	rm -f *.o *~ *.out
